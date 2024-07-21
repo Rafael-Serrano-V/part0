@@ -36,7 +36,7 @@ sequenceDiagram
 
     Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     Note over Server: Crea la nueva nota en la base de datos
-    Server-->>Browser: Respuesta HTTP 200 OK
+    Server-->>Browser: Respuesta HTTP 302 FOUND
     
     Note over Browser: Recarga de la página
     Browser-->User: Interfaz actualizada con la nueva nota 
